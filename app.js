@@ -6,7 +6,12 @@ function agregarAmigo(){
     const nombre = inputAmigo.ariaValueMax.trim();
 
     if(nombreAmigo === ""){
-        alert('Debes ingresar un nombre')
+        alert('Por favor, ingrese un nombre')
         return
     }
+
+    amigos.push(nombreAmigo)
+
+    actualizarLista();
+    
 }
