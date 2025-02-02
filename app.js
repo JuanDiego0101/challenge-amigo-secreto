@@ -4,4 +4,9 @@ let amigos = []
 function agregarAmigo(){
     const inputAmigo = document.getElementById('Amigo')
     const nombre = inputAmigo.ariaValueMax.trim();
+
+    if(nombreAmigo === ""){
+        alert('Debes ingresar un nombre')
+        return
+    }
 }
