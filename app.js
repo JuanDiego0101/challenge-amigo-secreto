@@ -17,5 +17,16 @@ function agregarAmigo(){
     inputAmigo.value = "";
     inputAmigo.focus();
 
-    
+
 }
+
+function actualizarLista(){
+    const listaAmigosUl = document.getElementById('listaAmigos')
+    listaAmigosUl.innerHTML = "";
+    
+    amigos.forEach(amigo => {
+        const li = document.createElement('li');
+        li.textContent = amigo;
+        listaAmigosUl.appendChild(li);
+    });
+}    
